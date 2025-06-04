@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -14,7 +14,7 @@ const MyCarousel = () => {
     
     
     autoplay:true ,
-    autuplaySpeed:1,
+    autuplaySpeed:2,
     
     pauseOnHover: true,
     
@@ -36,11 +36,12 @@ const MyCarousel = () => {
       },
     ],
   };
+ 
 
   return (
    
-    <div className='bg-rt1  bg-cover bg-center h-[400px] border    items-center'>
-     <Slider className="gap-4 px-4" {...settings}>
+    <div className='bg-img   bg-cover bg-center   h-[420px] border    items-center mb-16 mt-3'>
+     <Slider    {...settings}>
       <div>
         <div className="w-[90%] m-auto ">
           <div className="md:w-80  m-9 bg-gradient-to-r from-indigo-500 from-10% via-sky-500 via-30% to-emerald-500 to-90% ... border border-gray-200 rounded-lg shadow dark:bg-gray-800  dark:border-gray-700">
@@ -173,11 +174,16 @@ const MyCarousel = () => {
             </div>
           </div>
         </div>
+
+       
       </div>
 
 
       
     </Slider>
+
+   
+
    </div>
    
   );

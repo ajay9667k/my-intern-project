@@ -1,38 +1,143 @@
-const Slider=()=>{
-return(
-   <div>
-   
-          
-  
-  <div class="px-0 py-2 max-w-sm  rounded overflow-hidden w-[350px] h-[600px]  text-center border">
-   
-    <div class="font-bold text-xl mb-2 h-[120px] bg-[#115256] "><span class="inline-block bg-gray-400 rounded-full px-3 py-1 text-sm font-semibold text-gray-700 mr-2 mb-2 mt-4">Beginner Plan</span>
-  <p className="font-normal text-sm font-serif">Start from</p>
-  <h1 className="text-lg text-white">INR 161 <span className="text-sm text-black">p/mo</span></h1></div>
-   <div className="bg-white bottom text-left">
-     <ul>
-        
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>1 Website</li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>1 Cpanel</li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>2 GB Storage</li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>5GB Bandwidth </li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>5 Email Accounts</li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>3 Sub Domains</li>
-        <li><i class="fa fa-check-square" aria-hidden="true"></i>1 Myaql Database</li>
-        
-    </ul>
-   </div>
-    <div class="font-bold text-xl mb-2 flex justify-center items-center bg-[#115256] h-[100px]">
-         <button className="rounded-full h-[50px] w-[150px] bg-slate-100">Order now</button>
-    </div>
-  </div>
+import img from "../imge/uptime.png";
+import img1 from "../imge/gofind.jpeg"
+import img2 from "../imge/kd.png"
+import img3 from  "../imge/tws-removebg-preview.png"
+import Slider from 'react-slick';
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+
+const Sliderui = () => {
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 2000,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    
+    
+    autoplay:true ,
+    autuplaySpeed:2,
+    
+    pauseOnHover: true,
+    
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  };
  
-</div>
+
+  return (
+   
+    <div className='bg-img   bg-cover bg-center   h-[420px] border    items-center mb-10 mt-3'>
+     <Slider   {...settings}>
+     
+
+      
+         <div className="w-[90%]  m-auto">
+        <div className="md:w-[80%] h-[400px] overflow-hidden m-9 opacity-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  dark:border-gray-700">
+          <p className="h-6 w-12  rounded-r-sm  bg-red-500"></p>
+          <div className="p-5 ">
+            <p className="mt-0 text font- tracking-tight text-gray-900 dark:text-white">
+              Great supports, like i have never seen befor Thanks to the support team , they are very helpfull this company provide customers great solution, that makes them best.
+            </p>
+            
+
+            <p className="mb-3 flex rounded-lg justify-center font-normal text-black dark:text-gray-400">
+                 <img src={img1}  className=" h-[100px] w-[100px]" alt="" />
+            </p>
+            <p className="mt-3 mb-3 text-center">Go Find A Pro </p>
+
+            <p className="mt-1">
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+
        
+         <div className="w-[90%]  m-auto">
+        <div className="md:w-[80%] h-[400px] overflow-hidden m-9 opacity-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  dark:border-gray-700">
+          <p className="h-6 w-12 rounded-r-sm  bg-red-500"></p>
+          <div className="p-5 ">
+            <p className="mt-0 text font- tracking-tight text-gray-900 dark:text-white">
+              Site Work is an excellent web hosting service that's simple to use and offer an array of usefull plans for consumers and small businesses.
+            </p>
+            
+
+            <p className="mt-8 flex rounded-full justify-center font-normal text-black dark:text-gray-400">
+                 <img src={img2} className="h-[80px] w-[80px]" alt="" />
+            </p>
+            <p className="mt-7 text-center">KD Software</p>
+
+            <p className="mt-3">
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+      
+      
+        
+         <div className="w-[90%]  m-auto">
+        <div className="md:w-[80%] h-[400px] overflow-hidden m-9 opacity-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  dark:border-gray-700">
+          <p className="h-6 w-12  rounded-r-sm  bg-red-500"></p>
+          <div className="p-5 ">
+            <p className="mt-0 text font- tracking-tight text-gray-900 dark:text-white">
+              They offer a lot of value based on their skills, talent , and rate.
+            </p>
+            
+
+            <p className="mt-12 font-normal flex justify-center text-black dark:text-gray-400">
+                 <img src={img3} className="h-[100px] w-[100px]" alt="" />
+            </p>
+            <p className="mt-8 text-center">Tech Well Solution </p>
+
+            <p className="mt-7">
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+              <span class="fa fa-star text-red-500 p-1"></span>
+            </p>
+          </div>
+        </div>
+      </div>
+     
 
 
+           
+      
+    </Slider>
 
    
-)
-}
-export default Slider;
+
+   </div>
+   
+  );
+};
+
+export default Sliderui;

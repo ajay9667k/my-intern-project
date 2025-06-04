@@ -25,21 +25,21 @@ const Mypr=()=>{
       
     }
     return(
-        <div>
+        <div className="bg-[#FBFBFB]">
            <div className="text-center justify-center items-center flex h-[60px]">
-              <h1 className="text-3xl p-5" >Linux</h1>
+              <h1 className="text-2xl font-mono font-semibold p-5" >Linux</h1>
               <div className="h-[20px]">
           <Switch className="bg-gray-500"    checked={cheked} onChange={()=>handle()}  checkedIcon={false} uncheckedIcon={false}  />  
         </div>
         
-        <h1 className="text-3xl p-5">Windows</h1>
+        <h1 className="text-2xl font-mono font-semibold p-5">Windows</h1>
            </div>
            <hr />
 
      <div className="flex justify-center flex-wrap  items-center gap-7 mt-10 ">
-<div className="px-2 py-2   rounded overflow-hidden w-[270px] h-[36%]  text-center border">
+<div className="px-2 py-2 shadow-2xl  rounded overflow-hidden w-[270px] h-[36%]  text-center border">
    
-    <div className="font-bold text-xl mb-2 h-[150px]  bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Beginner Plan</span>
+    <div className="font-bold text-xl mb-2 h-[170px]   bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Beginner Plan</span>
   <p className="font-normal text-[#87ADAF] text-sm font-serif">Start from</p>
   <h1 className="text-2xl text-white">INR 161 <span className="text-sm ">p/mo</span></h1></div>
    <div className="bg-white bottom text-left">
@@ -60,9 +60,9 @@ const Mypr=()=>{
     </div>
   </div>
   
-<div className="px-2 py-2   rounded overflow-hidden w-[270px] h-[36%]  text-center border">
+<div className="px-2 py-2 shadow-2xl  rounded overflow-hidden w-[270px] h-[36%]  text-center border">
    
-    <div className="font-bold text-xl mb-2 h-[150px]  bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Beginner Plan</span>
+    <div className="font-bold text-xl mb-2 h-[170px]  bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Beginner Plan</span>
   <p className="font-normal text-[#87ADAF] text-sm font-serif">Start from</p>
   <h1 className="text-2xl text-white">INR 221 <span className="text-sm ">p/mo</span></h1></div>
    <div className="bg-white bottom text-left">
@@ -83,9 +83,9 @@ const Mypr=()=>{
     </div>
   </div>
 
-  <div className="px-2 py-2   rounded overflow-hidden w-[270px] h-[36%]  text-center border">
+  <div className="px-2 py-2  shadow-2xl rounded overflow-hidden w-[270px] h-[36%]  text-center border">
    
-    <div className="font-bold text-xl mb-2 h-[150px]  bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Traffic Plan</span>
+    <div className="font-bold text-xl mb-2 h-[170px]  bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Traffic Plan</span>
   <p className="font-normal text-[#87ADAF] text-sm font-serif">Start from</p>
   <h1 className="text-2xl text-white">INR 311 <span className="text-sm ">p/mo</span></h1></div>
    <div className="bg-white bottom text-left">
@@ -106,9 +106,9 @@ const Mypr=()=>{
     </div>
   </div>
 
-  <div className="px-2 py-2   rounded overflow-hidden w-[270px] h-[36%]  text-center border">
+  <div className="px-2 py-2 shadow-2xl  rounded overflow-hidden w-[270px] h-[36%]  text-center border">
    
-    <div className="font-bold text-xl mb-2 h-[150px]  bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Standard Plan</span>
+    <div className="font-bold text-xl mb-2 h-[170px]  bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Standard Plan</span>
   <p className="font-normal text-[#87ADAF] text-sm font-serif">Start from</p>
   <h1 className="text-2xl text-white">INR 521 <span className="text-sm ">p/mo</span></h1></div>
    <div className="bg-white bottom text-left">
