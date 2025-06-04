@@ -43,7 +43,8 @@ const Sliderui = () => {
 
   return (
    
-    <div className='bg-img   bg-cover bg-center   h-[420px] border    items-center mb-10 mt-3'>
+    <div className="w-full h-[500px] bg-gray-300 m-auto">
+      <div className='bg-img   bg-cover m-auto bg-center w-[95%]   h-[460px] border    items-center mt-12 rounded-md'>
      <Slider   {...settings}>
      
 
@@ -136,6 +137,7 @@ const Sliderui = () => {
    
 
    </div>
+    </div>
    
   );
 };

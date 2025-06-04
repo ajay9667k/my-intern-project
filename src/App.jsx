@@ -14,11 +14,10 @@ import MyCarousel from "./componets/vot";
 function App() {
   return (
    <>
-   {/* <CardSlider/> */}
+  
  
-  {/* <MyCarousel/>
-   <Mypr/> */}
-   {/* <Infoslide/> */}
+  <MyCarousel/>
+   <Mypr/>
    <Sliderui/>
    </>
   );
