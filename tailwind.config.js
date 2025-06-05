@@ -6,7 +6,8 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage:{
-        "img":"url(/src/imge/rt2.avif)"
+        "img":"url(/src/imge/rt2.avif)",
+        "img1":"url(/src/imge/map2.jpg)"
       }
     },
   },

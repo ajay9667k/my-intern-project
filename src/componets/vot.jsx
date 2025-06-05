@@ -40,7 +40,7 @@ const MyCarousel = () => {
 
   return (
    
-    <div className='bg-img   bg-cover bg-center   h-[420px] border    items-center mb-16 mt-3'>
+    <div className='bg-img   bg-cover bg-center   h-[500px] border    items-center mb-16 mt-3'>
      <Slider    {...settings}>
       <div>
         <div className="w-[90%] m-auto ">

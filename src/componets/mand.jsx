@@ -43,13 +43,17 @@ const Sliderui = () => {
 
   return (
    
-    <div className="w-full h-[500px] bg-gray-300 m-auto">
-      <div className='bg-img   bg-cover m-auto bg-center w-[95%]   h-[460px] border    items-center mt-12 rounded-md'>
+    
+      <div className='bg-img1 bg-blur-3xl   bg-cover m-auto bg-center w-[100%]   h-[580px] border    items-center mt-12 rounded-md'>
+        <div className=" text-center mt-10 font-serif">
+         <p className="text-2xl text-white font-bold">Web Development &</p>
+         <h1 className="text-4xl text-white">Hosting Provider</h1>
+        </div>
      <Slider   {...settings}>
      
 
       
-         <div className="w-[90%]  m-auto">
+         <div className="w-[90%] m-auto ">
         <div className="md:w-[80%] h-[400px] overflow-hidden m-9 opacity-1 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800  dark:border-gray-700">
           <p className="h-6 w-12  rounded-r-sm  bg-red-500"></p>
           <div className="p-5 ">
@@ -137,7 +141,7 @@ const Sliderui = () => {
    
 
    </div>
-    </div>
+   
    
   );
 };
