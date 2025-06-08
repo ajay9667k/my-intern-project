@@ -1,3 +1,4 @@
+import Aboutsite from "./aboutsiteworex";
 import Barnav from "./Counter";
 import FAQSection from "./faq";
 import Filebox from "./file";
@@ -16,6 +17,7 @@ const Siteworex=()=>{
          <Navtop/>
          <Sitenav/>
          <MyCarousel/>
+         <Aboutsite/>
          <Mypr/>
          <SiteWorxFeaturesSection/>
          <Filebox/>

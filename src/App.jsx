@@ -21,6 +21,8 @@ import Barnav from "./componets/Counter";
 import Sitenav from "./componets/navbar";
 import Navtop from "./componets/navtop";
 import Footer from "./componets/footer";
+import Aboutsite from "./componets/aboutsiteworex";
+import Login from "./componets/login";
 
 
 
@@ -40,8 +42,8 @@ function App() {
    {/* <ContactForm/> */}
    {/* <SiteWorxFeaturesSection/> */}
    {/* <Barnav/> */}
-   <Siteworex/>
-   
+   {/* <Siteworex/> */}
+   <Login/>
    </>
   );
 }
