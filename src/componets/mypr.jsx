@@ -4,7 +4,7 @@ import Switch from "react-switch"
 /* Option 2: Import via CSS */
 
 const Mypr=()=>{
-  
+   
     const [cheked,setCheked]=  useState(false)
     const [ulone,setulone]= useState("1 Cpanel account")
     const [ultwo,setultwo]= useState("5 Cpanel accounts")
@@ -43,7 +43,8 @@ const Mypr=()=>{
            <div className="text-center justify-center items-center flex h-[60px]">
               <h1 className="text-2xl text-[#707070] font-mono font-semibold p-5" >Linux</h1>
               <div className="h-[20px]">
-          <Switch className="bg-gray-500"    checked={cheked} onChange={()=>handle()}  checkedIcon={false} uncheckedIcon={false}  />  
+          <Switch  className="bg-gray-500" value={cheked}   checked={cheked} onChange={()=>handle()} onColor="#3333ff"
+       checkedIcon={false} uncheckedIcon={false}  />  
         </div>
         
         <h1 className="text-2xl text-[#707070] font-mono font-semibold p-5">Windows</h1>
