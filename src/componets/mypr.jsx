@@ -26,17 +26,17 @@ const Mypr=()=>{
       
     }
     return(
-        <div className="bg-[#FBFBFB] mt-10">
-          <div className="mt-4 h-[250px]">
+        <div className="bg-[#FBFBFB] ">
+          <div className="mt-4 sm:h-[250px] h-[300px]">
                <p className="text-center text-5xl text-[#115256] font-serif ">India's Best Hosting Provider</p>
                <p className="text-center text-[#096D72] text-md font-serif mt-3">Select Your</p>
                <p className="text-center text-[#1A1C26] text-4xl font-serif mt-3">Hosting Plan</p>
 
-               <div className="flex justify-center mt-10 items-center  md:gap-6">
-                  <button className="bg-[#35A9AF] text-white md:text-xl rounded-md h-10 w-36">Shared Hosting</button>
-                  <button className="bg-[#35A9AF] text-white md:text-xl rounded-md h-10 w-36">Rrseller Hosting</button>
-                  <button className="bg-[#35A9AF] text-white md:text-xl rounded-md h-10 w-36">Cloud Hosting</button>
-                  <button className="bg-[#35A9AF] text-white md:text-xl rounded-md h-10 w-36">VPS Hosting</button>
+               <div className="flex justify-center mb-10 md:mb-0 mt-10 sm:mb-0 md:mt-10  items-center  md:gap-6">
+                  <button className="bg-[#35A9AF] text-white md:text-xl rounded-md sm:h-10 h-[50px] sm:w-36 w-20 mr-4 ">Shared Hosting</button>
+                  <button className="bg-[#35A9AF] text-white md:text-xl rounded-md sm:h-10 h-[50px] sm:w-36 w-20 mr-4">Rrseller Hosting</button>
+                  <button className="bg-[#35A9AF] text-white md:text-xl rounded-md sm:h-10 h-[50px] sm:w-36 w-20 mr-4">Cloud Hosting</button>
+                  <button className="bg-[#35A9AF] text-white md:text-xl rounded-md sm:h-10 h-[50px] sm:w-36 w-20 mr-4">VPS Hosting</button>
                   
                </div>
           </div>

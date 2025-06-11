@@ -42,8 +42,8 @@ function App() {
    {/* <ContactForm/> */}
    {/* <SiteWorxFeaturesSection/> */}
    {/* <Barnav/> */}
-   {/* <Siteworex/> */}
-   <Login/>
+   <Siteworex/>
+   {/* <Login/> */}
    </>
   );
 }

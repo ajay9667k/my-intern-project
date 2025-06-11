@@ -1,5 +1,6 @@
 import React from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
+import siteworex from "../imge/siteworex.png"
 
 const Footer = () => {
   return (
@@ -9,12 +10,10 @@ const Footer = () => {
           {/* Company Info Section */}
           <div className="lg:col-span-1">
             <div className="flex items-center mb-6">
-              <div className="bg-white rounded-full p-2 mr-3">
-                <div className="w-8 h-8 bg-teal-600 rounded-full flex items-center justify-center">
-                  <span className="text-white font-bold text-sm">SW</span>
-                </div>
+              <div className="bg-yellow-100 rounded-lg p-2 mr-3">
+                  <img src={siteworex} className="h-[40px] w-[150px] rounded-lg" alt="" />
               </div>
-              <span className="text-xl font-semibold">SiteWorx</span>
+              {/* <span className="text-xl font-semibold">SiteWorx</span> */}
             </div>
             
             <p className="text-teal-100 mb-6 leading-relaxed">

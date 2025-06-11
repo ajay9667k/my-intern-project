@@ -21,9 +21,9 @@ const Sitenav = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-6 ml-60 ">
+          <div className="hidden md:flex gap-6 font-normal ml-48 ">
             <Link className="text-gray-700 hover:text-blue-600" to="/">
-              DOMAINS
+              DOMAINS 
             </Link>
             <Link className="text-gray-700 hover:text-blue-600" to="/about">
               HOSTING
@@ -53,7 +53,7 @@ const Sitenav = () => {
           <div className="md:hidden">
             <button
               onClick={() => setMenuOpen(!menuOpen)}
-              className="text-gray-700 focus:outline-none"
+              className="text-gray-700 focus:outline-none ml-[230px]"
             >
               {menuOpen ? (
                 <svg
