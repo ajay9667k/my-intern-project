@@ -36,7 +36,7 @@ const Filebox = () => {
       display: 'flex',
       alignItems: 'center',
       textDecoration: 'none',
-      border: '2px solid transparent'
+      // border: '2px solid transparent'
     },
     subSections: {
       position: 'absolute',

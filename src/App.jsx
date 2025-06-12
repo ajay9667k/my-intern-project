@@ -23,6 +23,12 @@ import Navtop from "./componets/navtop";
 import Footer from "./componets/footer";
 import Aboutsite from "./componets/aboutsiteworex";
 import Login from "./componets/login";
+import NewNavbar from "./componets/navtop";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Sign from "./componets/login";
+import TwoStepSignup from "./componets/singn";
+import SignIn from "./componets/signin";
+import Loginto from "./componets/loginform";
 
 
 
@@ -44,6 +50,16 @@ function App() {
    {/* <Barnav/> */}
    <Siteworex/>
    {/* <Login/> */}
+   {/* <NewNavbar/> */}
+   {/* <BrowserRouter>
+    <Routes>
+    <Route path="/sign" element={<Sign/>}/>
+    <Route path="/veryfy" element={<TwoStepSignup/>}/>
+    <Route path="/" element={<Siteworex/>}/>
+   </Routes>
+  </BrowserRouter> */}
+   {/* <Loginto/> */}
+
    </>
   );
 }

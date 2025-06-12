@@ -1,14 +1,16 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Navigate, useNavigate } from "react-router-dom";
 import siteworex from "../imge/siteworex.png"
+import NewNavbar from "./navtop";
 
 const Sitenav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
-
+      const navigate= useNavigate()
   return (
    
-    <div className="h-[50px]  w-[100%] m-auto ">
-     <nav className="bg-white  shadow-md fixed-top top-10 bg-opacity-50 backdrop-blur-sm  w-[100%] m-auto">
+    <div className="h-[50px]   w-[100%] m-auto ">
+      <NewNavbar/>
+     <nav className="bg-white  shadow-md fixed-top   w-[100%] m-auto">
       <div className="max-w-7xl  px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16">
           {/* Brand */}
@@ -22,34 +24,35 @@ const Sitenav = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-6 font-normal ml-48 ">
+          <div className="hidden md:flex gap-3  ml-32 ">
             <Link className="text-gray-700 hover:text-blue-600" to="/">
               DOMAINS 
             </Link>
-            <Link className="text-gray-700 hover:text-blue-600" to="/about">
+            <Link className="text-gray-700 hover:text-blue-600" to="/">
               HOSTING
             </Link>
-            <Link className="text-gray-700 hover:text-blue-600" to="/services">
+            <Link className="text-gray-700 hover:text-blue-600" to="/">
               SERVERS
             </Link>
-            <Link className="text-gray-700 hover:text-blue-600" to="/contact">
+            <Link className="text-gray-700 hover:text-blue-600" to="/">
               EMAIL MARKETING
             </Link>
 
              <Link className="text-gray-700 hover:text-blue-600" to="/">
               GOOGLE WORKSPACE
             </Link>
-            <Link className="text-gray-700 hover:text-blue-600" to="/about">
+            <Link className="text-gray-700 hover:text-blue-600" to="/">
               LICENSE
             </Link>
-            <Link className="text-gray-700 hover:text-blue-600" to="/services">
+            <Link className="text-gray-700 hover:text-blue-600" to="/">
               SUPPORT
             </Link>
-            <Link className="text-gray-700 hover:text-blue-600" to="/contact">
+            <Link className="text-gray-700 hover:text-blue-600" to="/">
               ABOUT
             </Link>
+           
           </div>
-
+            
           {/* Mobile Menu Button */}
           <div className="md:hidden">
             <button

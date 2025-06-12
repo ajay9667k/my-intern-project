@@ -7,6 +7,7 @@ import SiteWorxFeaturesSection from "./m";
 import Sliderui from "./mand";
 import Mypr from "./mypr";
 import Sitenav from "./navbar";
+import NewNavbar from "./navtop";
 import Navtop from "./navtop";
 import MyCarousel from "./vot";
 
@@ -14,7 +15,7 @@ import MyCarousel from "./vot";
 const Siteworex=()=>{
     return(
         <div className="h-auto w-full  bg-cover bg-no-repeat">
-         <Navtop/>
+         {/* <NewNavbar/> */}
          <Sitenav/>
          <MyCarousel/>
          <Aboutsite/>

@@ -27,7 +27,7 @@ const Mypr=()=>{
     }
     return(
         <div className="bg-[#FBFBFB] ">
-          <div className="mt-4 sm:h-[250px] h-[300px]">
+          <div className="sm:h-[250px] h-[300px]">
                <p className="text-center text-5xl text-[#115256] font-serif ">India's Best Hosting Provider</p>
                <p className="text-center text-[#096D72] text-md font-serif mt-3">Select Your</p>
                <p className="text-center text-[#1A1C26] text-4xl font-serif mt-3">Hosting Plan</p>
@@ -49,7 +49,7 @@ const Mypr=()=>{
         
         <h1 className="text-2xl text-[#707070] font-mono font-semibold p-5">Windows</h1>
            </div>
-           <hr />
+         
 
      <div className="flex justify-center flex-wrap  items-center gap-7 mt-10 ">
 <div className="px-2 py-2 shadow-2xl  rounded overflow-hidden w-[270px] h-[36%]  text-center border">
