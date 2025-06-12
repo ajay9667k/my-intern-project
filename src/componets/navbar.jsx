@@ -6,8 +6,9 @@ const Sitenav = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-   <div className="h-[50px]  w-[100%] m-auto ">
-     <nav className="bg-white  shadow-md bg-opacity-50 backdrop-blur-sm fixed-top w-[100%] m-auto ">
+   
+    <div className="h-[50px]  w-[100%] m-auto ">
+     <nav className="bg-white  shadow-md fixed-top top-10 bg-opacity-50 backdrop-blur-sm  w-[100%] m-auto">
       <div className="max-w-7xl  px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16">
           {/* Brand */}
@@ -107,6 +108,7 @@ const Sitenav = () => {
 
 
    </div>
+   
    
   );
 };
