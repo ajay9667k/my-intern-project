@@ -2,6 +2,10 @@ import React, { useState } from 'react';
 import Sign from './signin.jsx';
 import TwoStepSignup from './twostep.jsx';
 import FOREST from '../imge/gofind.jpeg';
+import NewNavbar from './navtop.jsx';
+import Sitenav from './navbar.jsx';
+import Footer from './footer.jsx';
+import { useNavigate } from 'react-router-dom';
 
 
 export default function Loginto() {
@@ -10,13 +14,17 @@ export default function Loginto() {
   const [showSignUp, setShowSignUp] = useState(false);
   const [showForgot, setShowForgot] = useState(false);
   const [forgotEmail, setForgotEmail] = useState('');
-  const [forgotStep, setForgotStep] = useState(1);
-
+  const [forgotStep, setForgotStep] = useState(1) ; 
+     const navigate=  useNavigate()
   const handleSubmit = (e) => {
     e.preventDefault();
     // Add your login logic here
     alert(`Email: ${email}\nPassword: ${password}`);
   };
+
+  const Gosign=()=>{
+    navigate("/sign");
+  }
 
   const handleForgotPassword = () => {
     setShowForgot(true);
@@ -27,6 +35,8 @@ export default function Loginto() {
   };
 
   return (
+    <>
+    <Sitenav/>
     <div style={{
       minHeight: '100vh',
       display: 'flex',
@@ -132,11 +142,13 @@ export default function Loginto() {
               Forgot Password?
             </button>
           </form>
-          <button type="button" onClick={() => setShowSignUp(true)} style={{ marginTop: 32, width: 320, background: 'none', border: '1px solid #6366f1', color: '#6366f1', borderRadius: 4, padding: 10, cursor: 'pointer', marginLeft: 0 }}>
+          <button type="button" onClick={() => Gosign()} style={{ marginTop: 32, width: 320, background: 'none', border: '1px solid #6366f1', color: '#6366f1', borderRadius: 4, padding: 10, cursor: 'pointer', marginLeft: 0 }}>
             Sign Up
           </button>
         </>
       )}
     </div>
+ <Footer/>
+ </>
   );
 }

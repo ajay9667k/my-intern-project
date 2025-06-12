@@ -7,6 +7,7 @@ import TwoStepSignup from "./singn";
 import NewNavbar from './navtop';
 import Sitenav from './navbar';
 import Footer from './footer';
+import { useNavigate } from 'react-router-dom';
 
 
 const countryData = [
@@ -156,6 +157,12 @@ export default function Sign() {
 			setErrors(prev => ({ ...prev, [name]: '' }));
 		}
 	};
+	const navigate=useNavigate()
+	const veryfyemail=()=>{
+		if(form.email){
+			navigate("/veryfy")
+		}
+	}
 
 	const validateForm = () => {
 		const newErrors = {};
@@ -196,7 +203,7 @@ export default function Sign() {
 		<NewNavbar/>
          <Sitenav/>
 			{showVerification ? (
-				<div style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
+				<div  style={{ position: 'fixed', top: 0, left: 0, width: '100vw', height: '100vh', background: 'rgba(0,0,0,0.3)', display: 'flex', alignItems: 'center', justifyContent: 'center', zIndex: 1000 }}>
 					<div style={{ padding: 32, minWidth: 340, background: '#fff', borderRadius: 12 }}>
 						<h2 style={{ textAlign: 'center', marginBottom: 24 }}>Two-Step Verification</h2>
 						<TwoStepSignup email={verificationEmail} isForgotPassword={true} onSuccess={handleVerificationSuccess} />
@@ -418,7 +425,7 @@ export default function Sign() {
 							style={{ borderRadius: 18, height: 48, fontSize: 18, paddingLeft: 16 }}
 						/>
 					</div>
-					<button type="submit" style={{ borderRadius: 18, padding: '12px 0', background: '#6366f1', color: '#fff', fontWeight: 600, border: 'none', fontSize: 16, backgroundColor: '#4C48B0', width: '100%' }}>Sign In</button>
+					<button type="submit" style={{ borderRadius: 18, padding: '12px 0', background: '#6366f1', color: '#fff', fontWeight: 600, border: 'none', fontSize: 16, backgroundColor: '#4C48B0', width: '100%' }} onClick={()=>{veryfyemail()}}>Sign In</button>
 				</form>
 				
 			)}

@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import axios from 'axios';
+import Sitenav from './navbar';
+import Footer from './footer';
 const TwoStepSignup = ({ email, isForgotPassword }) => {
     const [step, setStep] = useState(isForgotPassword ? 2 : 1);
     const [formData, setFormData] = useState({
@@ -363,6 +365,8 @@ const TwoStepSignup = ({ email, isForgotPassword }) => {
     };
 
     return (
+        <>
+        <Sitenav/>
         <div style={styles.container}>
             <div style={styles.card}>
                 {/* Remove create account form, only show verification step */}
@@ -457,6 +461,8 @@ const TwoStepSignup = ({ email, isForgotPassword }) => {
         }
       `}</style>
         </div>
+        <Footer/>
+        </>
     );
 };
 

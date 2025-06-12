@@ -10,7 +10,7 @@ const Sitenav = () => {
    
     <div className="h-[50px]   w-[100%] m-auto ">
       <NewNavbar/>
-     <nav className="bg-white  shadow-md fixed-top   w-[100%] m-auto">
+     <nav className="bg-white  shadow-md fixed-top top-12   w-[100%] m-auto">
       <div className="max-w-7xl  px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16">
           {/* Brand */}

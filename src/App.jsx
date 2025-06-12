@@ -26,7 +26,7 @@ import Login from "./componets/login";
 import NewNavbar from "./componets/navtop";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Sign from "./componets/login";
-import TwoStepSignup from "./componets/singn";
+import TwoStepSignup from "./componets/twostep";
 import SignIn from "./componets/signin";
 import Loginto from "./componets/loginform";
 
@@ -48,17 +48,18 @@ function App() {
    {/* <ContactForm/> */}
    {/* <SiteWorxFeaturesSection/> */}
    {/* <Barnav/> */}
-   <Siteworex/>
+   {/* <Siteworex/> */}
    {/* <Login/> */}
    {/* <NewNavbar/> */}
-   {/* <BrowserRouter>
+   
     <Routes>
+      <Route path="/login" element={<Loginto/>}/>
     <Route path="/sign" element={<Sign/>}/>
     <Route path="/veryfy" element={<TwoStepSignup/>}/>
     <Route path="/" element={<Siteworex/>}/>
    </Routes>
-  </BrowserRouter> */}
-   {/* <Loginto/> */}
+ 
+     
 
    </>
   );
