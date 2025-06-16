@@ -9,10 +9,10 @@ const NewNavbar = () => {
     navigate('/login');
   };
   return (
-    <nav className="w-full flex items-center justify-between px-6 fixed-top py-2 bg-white shadow-md" style={{ fontFamily: 'sans-serif' }}>
+    <nav className="w-full flex items-center justify-between px-6  py-2 bg-teal-400 shadow-md" style={{ fontFamily: 'sans-serif' }}>
       {/* Left: Email */}
-      <div className="flex items-center gap-2 text-blue-900 font-semibold">
-        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#1e40af" strokeWidth="2" className="mr-1"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
+      <div className="flex items-center gap-2   text-blue-900 font-semibold">
+        <svg xmlns="http://www.w3.org/2000/svg"   width="18" height="18" fill="none" viewBox="0 0 24 24" stroke="#1e40af" strokeWidth="2" className="mr-1 float-end"><rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="22,6 12,13 2,6"/></svg>
         <a href="mailto:info@siteworx.in" className="hover:underline" style={{color:'#1e40af'}}>info@siteworx.in</a>
       </div>
       {/* Right: Client Area Dropdown */}

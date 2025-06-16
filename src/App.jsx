@@ -29,6 +29,10 @@ import Sign from "./componets/login";
 import TwoStepSignup from "./componets/twostep";
 import SignIn from "./componets/signin";
 import Loginto from "./componets/loginform";
+import Indiamserver from "./componets/indianserver";
+import FAQ from "./componets/singn";
+import Deticatedforner from "./componets/indianserver1";
+
 
 
 
@@ -52,14 +56,16 @@ function App() {
    {/* <Login/> */}
    {/* <NewNavbar/> */}
    
-    <Routes>
+    {/* <Routes>
       <Route path="/login" element={<Loginto/>}/>
     <Route path="/sign" element={<Sign/>}/>
     <Route path="/veryfy" element={<TwoStepSignup/>}/>
     <Route path="/" element={<Siteworex/>}/>
-   </Routes>
+   </Routes> */}
  
-     
+     <Indiamserver/>
+     {/* <FAQ/> */}
+     {/* <Deticatedforner/> */}
 
    </>
   );

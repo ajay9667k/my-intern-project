@@ -281,7 +281,7 @@ const Filebox = () => {
   return (
     <div style={styles.appBackground}>
       {/* Navigation Bar */}
-      <div style={styles.sectionsBar}>
+      {/* <div style={styles.sectionsBar}>
         <span
           style={styles.sectionLink}
           onMouseEnter={(e) => {
@@ -465,7 +465,7 @@ const Filebox = () => {
             {item}
           </span>
         ))}
-      </div>
+      </div> */}
        
      
 
@@ -545,8 +545,8 @@ const Filebox = () => {
         
       </div>
 
-      {/* Contact Form */}
-      {showForm && <ContactForm />}
+      {/* Contact Form
+      {showForm && <ContactForm />} */}
     </div>
   );
 };

@@ -8,9 +8,9 @@ const Sitenav = () => {
       const navigate= useNavigate()
   return (
    
-    <div className="h-[50px]   w-[100%] m-auto ">
-      <NewNavbar/>
-     <nav className="bg-white  shadow-md fixed-top top-12   w-[100%] m-auto">
+    <div className="h-[50px]  sticky top-0 bottom-0 left-0 right-0  w-[100%] m-auto ">
+      
+     <nav className="bg-white  shadow-md   w-[100%] m-auto">
       <div className="max-w-7xl  px-4 sm:px-6 lg:px-8">
         <div className="flex items-center h-16">
           {/* Brand */}
@@ -24,8 +24,8 @@ const Sitenav = () => {
           </div>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex gap-3  ml-32 ">
-            <Link className="text-gray-700 hover:text-blue-600" to="/">
+          <div className="hidden md:flex gap-3  ml-20 ">
+            <Link className="text-gray-700  hover:text-blue-600" to="/">
               DOMAINS 
             </Link>
             <Link className="text-gray-700 hover:text-blue-600" to="/">

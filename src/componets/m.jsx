@@ -184,7 +184,7 @@ export default function SiteWorxFeaturesSection() {
         }
       `}</style>
 
-      <div className="features-container mt-[100px]">
+      <div className="features-container ">
        <div className='h-[250px] w-full bg-slate-50 mb-10'>
             <p className="text-center text-4xl text-[#115256]  font-serif ">The SiteWorx Advantage for Web Hosting Services in India</p>
                <p className="m-auto  text-center w-[80%] text-black text-md font-serif mt-3">SiteWorx offers the best and cheap web hosting solutions with the backend handled by professionals with industry expertise. Our web hosting combines one of the best features in every package.  But why should you choose SiteWorx advantage? Here the all the features that make us stand out:</p>

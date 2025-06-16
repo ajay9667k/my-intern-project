@@ -44,7 +44,7 @@ const Sliderui = () => {
   return (
    
     
-      <div className='bg-img1 bg-blur-3xl   bg-cover m-auto bg-center w-[100%]   h-[580px] border    items-center mt-12 rounded-md'>
+      <div className='bg-img1    bg-cover  bg-center    h-[580px]   mt-12 rounded-md'>
         <div className=" text-center mt-10 font-serif">
          <p className="text-2xl text-white font-bold">Web Development &</p>
          <h1 className="text-4xl text-white">Hosting Provider</h1>

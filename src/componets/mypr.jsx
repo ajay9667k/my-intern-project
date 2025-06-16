@@ -26,7 +26,7 @@ const Mypr=()=>{
       
     }
     return(
-        <div className="bg-[#FBFBFB] ">
+        <div >
           <div className="sm:h-[250px] h-[300px]">
                <p className="text-center text-5xl text-[#115256] font-serif ">India's Best Hosting Provider</p>
                <p className="text-center text-[#096D72] text-md font-serif mt-3">Select Your</p>
@@ -51,8 +51,8 @@ const Mypr=()=>{
            </div>
          
 
-     <div className="flex justify-center flex-wrap  items-center gap-7 mt-10 ">
-<div className="px-2 py-2 shadow-2xl  rounded overflow-hidden w-[270px] h-[36%]  text-center border">
+     <div className="flex justify-center flex-wrap  items-center gap-7  mt-10 ">
+<div className="px-2 py-2 shadow-2xl  rounded overflow-hidden w-[270px] h-[40%]  text-center border">
    
     <div className="font-bold text-xl mb-2 h-[170px]   bg-[#0D5F63] "><span className="inline-block bg-[#096D72] rounded-full px-3 py-1 text-xl  font-semibold text-white mr-2 mb-2 mt-4">Beginner Plan</span>
   <p className="font-normal text-[#87ADAF] text-sm font-serif">Start from</p>

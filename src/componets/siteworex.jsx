@@ -15,7 +15,7 @@ import MyCarousel from "./vot";
 const Siteworex=()=>{
     return(
         <div className="h-auto w-full  bg-cover bg-no-repeat">
-         {/* <NewNavbar/> */}
+         <NewNavbar/>
          <Sitenav/>
          <MyCarousel/>
          <Aboutsite/>
