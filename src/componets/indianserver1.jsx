@@ -1,6 +1,8 @@
 import host from "../imge/host.gif";
 import Sliderui from "./mand";
 import FAQ from "./singn";
+import ban1 from "../imge/vps.svg";
+import flight from "../imge/uptime.png"
 const data=[
     {Dt:"Intel Core i5-3470 4 Cores",Cl:"3.20Ghz",Ram:"8 GB DDR3",Store:"240 GB SSD",Band:"2000 GB",Ip:"1 IP's",Price:"₹ 2999/m",Button:"Configure Now"},
 
@@ -65,9 +67,9 @@ const Deticatedforner = () => {
           India's Best Linux/Windows Dedicated Servers at Affordable Price
         </p>
 
-        <div className="relative overflow-x-auto shadow-md w-[85%] bg-gray-900 m-auto sm:rounded-lg ">
+        <div className="relative overflow-x-auto shadow-md w-[100%] bg-gray-900 m-auto sm:rounded-lg ">
           <table className="w-full text-sm text-left rtl:text-right text-gray-700 dark:text-gray-400">
-            <thead className="text-xs uppercase h-[60px] text-[#f8f9fa] bg-[#096D72] dark:bg-gray-700 dark:text-gray-400">
+            <thead className="text-md font-bold  h-[60px] text-[#f8f9fa] bg-[#00AEEF]">
               <tr>
                 <th scope="col" className="px-6 py-3">
                   Dedicated Processors
@@ -99,7 +101,7 @@ const Deticatedforner = () => {
                 {
                    data.map((value)=>(
                      <>
-                 <tr className=" hover:bg-slate-200 bg-gray-100  border-b-[10px] border-t-[10px]    border-[white] text-[#212529]">
+                 <tr className=" hover:bg-slate-200 odd:bg-white even:bg-gray-100  bg-gray-100   text-[#212529]  font-sans text-md">
                 <td className="px-4 py-4 ">{value.Dt}</td>
                 <td className="px-4 py-4">{value.Cl}</td>
                 <td className="px-4 py-4">{value.Ram}</td>
@@ -108,7 +110,7 @@ const Deticatedforner = () => {
                 <td className="px-4 py-4">{value.Ip}</td>
                 <td className="px-4 py-4">{value.Price}</td>
                 <td className="px-4 py-4">
-                  <button className="bg-[#2F979F] text-[#f8f9fa] rounded-full h-[30px]   w-[130px]">
+                  <button className="bg-[#00AEEF] text-[#f8f9fa] rounded-full h-[30px]   w-[130px]">
                     Configure Now
                   </button>
                 </td>
@@ -125,25 +127,34 @@ const Deticatedforner = () => {
       <div className="font-serif bg-[#e2efff]">
         <hr className="text-black" />
         <div className="mt-36">
-          <div className=" w-[90%] m-auto">
-            <p className="text-[#096d72]  text-xl font-bold">
+          <div className="w-[80%] flex  flex-col md:flex-row  m-auto gap-5">
+            <div className="w-[60%]">
+              <p className="text-[#096d72]  text-xl font-bold">
              Best Linux Dedicated Server Providers in 2023
             </p>
 
             <p className="mt-6 font-sans text-[#707070]">
              The majority of server providers in the market guarantee cheap web hosting services. They even have pre-built hosting packages that include all the tools you will be needing to expand your company's online presence, such as a free domain name, unlimited storage, feature-rich cPanel, a one-click install among others. Yet, many of them do not specify that these offered resources still have some restrictions. The result is these restrictions lead to the shutdown of your website whenever it suffers a spike in traffic. You must pick the most reliable hosting company if you intend to successfully establish your website in the online world. Herein lies the value of web hosting services like 
             </p>
+            </div>
+            <div className="w-[40%]">
+              <img src={flight} alt="" />
+            </div>
           </div>
         </div>
         <div className="mt-16">
-          <div className=" w-[90%] m-auto">
-            <p className="text-[#096d72] text-xl font-bold">
-              The Main Dedicated Server Hosting Features:
-            </p>
+          <div className="w-[80%] flex  flex-col md:flex-row  m-auto gap-5">
+            <div className="w-[40%]">
+              <img src={ban1} alt="" />
+            </div>
+            
 
-             <div className=" font-sans mt-3 text-[#707070]">
-                <p>SiteWorx Infotech's team understands that companies want a hosting solution that can meet every demand of their expanding online presence. One of the reasons we prioritize providing the best Linux dedicated hosting services is due to this only. You won't need to be concerned about hosting restrictions with our Linux Dedicated hosting because you will be having total control over your server. Want it better still? We also allow you to customize your hosting plans so that you truly receive the tools required to expand your internet presence and receive the greatest value with our services</p>
-            <p className="mt-4">
+             <div className="w-[60%]">
+              <p className="text-[#096d72]  text-xl font-bold">
+              The Main Dedicated Server Hosting Features:
+            </p >
+                <p className="mt-6 font-sans text-[#707070]">SiteWorx Infotech's team understands that companies want a hosting solution that can meet every demand of their expanding online presence. One of the reasons we prioritize providing the best Linux dedicated hosting services is due to this only. You won't need to be concerned about hosting restrictions with our Linux Dedicated hosting because you will be having total control over your server. Want it better still? We also allow you to customize your hosting plans so that you truly receive the tools required to expand your internet presence and receive the greatest value with our services</p>
+            <p className="mt-2 font-sans text-[#707070]">
                 Without any additional costs or hidden usage restrictions, our  options are highly affordable. Thus, if you are searching for a reliable and adaptable hosting solution that can meet the demands of your expanding online presence, you can choose SiteWorx’s Linux Dedicated Server hosting.
             </p>
              </div>

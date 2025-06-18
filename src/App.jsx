@@ -63,9 +63,9 @@ function App() {
     <Route path="/" element={<Siteworex/>}/>
    </Routes> */}
  
-     <Indiamserver/>
+     {/* <Indiamserver/> */}
      {/* <FAQ/> */}
-     {/* <Deticatedforner/> */}
+     <Deticatedforner/>
 
    </>
   );
